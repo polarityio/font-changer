@@ -1,0 +1,7 @@
+{
+  "main": "./integration.js",
+  "name": "FontChanger",
+  "version": "3.0.0-beta",
+  "private": true,
+  "dependencies": {}
+}
