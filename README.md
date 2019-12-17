@@ -2,9 +2,7 @@
 
 The Polarity Font Changer integration is an on-demand integration which converts the selected text into a new font and font-size.  The integration is meant to improve accessibility in cases where fonts are difficult to read.
 
-![image](https://user-images.githubusercontent.com/306319/47765161-036a2980-dc9f-11e8-91fc-cf8f2583291f.png)
-
-## Pulsedive Integration Options
+## Font Changer Integration Options
 
 ### Font Family
 
