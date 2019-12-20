@@ -13,6 +13,7 @@ function doLookup(entities, options, cb) {
     entities.map((entity) => {
       return {
         entity,
+        displayValue: `Font Changer`,
         data: {
           summary: [],
           details: {
