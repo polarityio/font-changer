@@ -7,23 +7,20 @@ function startup(logger) {
 }
 
 function doLookup(entities, options, cb) {
-  Logger.info(entities);
+  Logger.debug(entities);
   cb(
     null,
-    entities.reduce((acc, entity) => {
-      if (entity.value.length > 0) {
-        acc.push({
-          entity,
-          data: {
-            summary: [],
-            details: {
-              text: entity.value
-            }
+    entities.map((entity) => {
+      return {
+        entity,
+        data: {
+          summary: [],
+          details: {
+            text: entity.value
           }
-        });
-      }
-      return acc;
-    }, [])
+        }
+      };
+    })
   );
 }
 

@@ -26,7 +26,7 @@ module.exports = {
   customTypes: [
     {
       key: 'text',
-      regex: /[\s\S]*/
+      regex: /[\s\S]+/
     }
   ],
   /**
@@ -75,8 +75,7 @@ module.exports = {
     {
       key: 'fontFamily',
       name: 'Font Family',
-      description:
-        'Display the selected text using the chosen font',
+      description: 'Display the selected text using the chosen font',
       default: {
         value: 'helvetica',
         display: 'Helvetica'
@@ -107,9 +106,8 @@ module.exports = {
     {
       key: 'fontSize',
       name: 'Font Size',
-      description:
-        'Display the selected text using the chosen font size',
-      default:         {
+      description: 'Display the selected text using the chosen font size',
+      default: {
         value: 'size-12px',
         display: '12px'
       },
@@ -133,6 +131,16 @@ module.exports = {
         }
       ],
       multiple: false,
+      userCanEdit: true,
+      adminOnly: false
+    },
+    {
+      key: 'preserveWhitespace',
+      name: 'Preserve Whitespace',
+      description:
+        'If checked, the integration will preserve the whitespace of the selected text when displaying it in the Overlay Window',
+      default: true,
+      type: 'boolean',
       userCanEdit: true,
       adminOnly: false
     }
