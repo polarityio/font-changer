@@ -1,5 +1,5 @@
-    <span class="integration-summary-tag integration-background-color integration-border-color">
-       <span class="acronym integration-text-bold-color">{{block.acronym}}</span>
-       <span class="integration-text-color {{block.userOptions.fontFamily.value}} {{block.userOptions.fontSize.value}} {{if block.userOptions.preserveWhitespace "preserve-whitespace"}}">{{details.text}}</span>
-    </span>
+<span {{on "click" (optional this.scrollToIntegration)}} class="integration-summary-tag integration-background-color integration-border-color">
+   <span class="acronym integration-text-bold-color">{{block.acronym}}</span>
+   <span class="integration-text-color {{block.userOptions.fontFamily.value}} {{block.userOptions.fontSize.value}} {{if block.userOptions.preserveWhitespace "preserve-whitespace"}}">{{details.text}}</span>
+</span>
 
