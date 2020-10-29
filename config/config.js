@@ -61,6 +61,14 @@ module.exports = {
       file: './templates/summary.hbs'
     }
   },
+  request: {
+    cert: '',
+    key: '',
+    passphrase: '',
+    ca: '',
+    proxy: '',
+    rejectUnauthorized: true
+  },
   logging: {
     level: 'info' //trace, debug, info, warn, error, fatal
   },
