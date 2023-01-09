@@ -1,0 +1,115 @@
+{
+  "name": "Font Changer",
+  "acronym": "FC",
+  "description": "Converts the selected text to a new font",
+  "customTypes": [
+    {
+      "key": "text",
+      "regex": "[\\s\\S]+"
+    }
+  ],
+  "styles": [
+    "./styles/style.less"
+  ],
+  "block": {
+    "component": {
+      "file": "./components/block.js"
+    },
+    "template": {
+      "file": "./templates/block.hbs"
+    }
+  },
+  "summary": {
+    "component": {
+      "file": "./components/summary.js"
+    },
+    "template": {
+      "file": "./templates/summary.hbs"
+    }
+  },
+  "request": {
+    "cert": "",
+    "key": "",
+    "passphrase": "",
+    "ca": "",
+    "proxy": "",
+    "rejectUnauthorized": true
+  },
+  "logging": {
+    "level": "info"
+  },
+  "options": [
+    {
+      "key": "fontFamily",
+      "name": "Font Family",
+      "description": "Display the selected text using the chosen font",
+      "default": {
+        "value": "helvetica",
+        "display": "Helvetica"
+      },
+      "type": "select",
+      "options": [
+        {
+          "value": "helvetica",
+          "display": "Helvetica"
+        },
+        {
+          "value": "courier",
+          "display": "Courier"
+        },
+        {
+          "value": "arial",
+          "display": "Arial"
+        },
+        {
+          "value": "verdana",
+          "display": "Verdana"
+        }
+      ],
+      "multiple": false,
+      "userCanEdit": true,
+      "adminOnly": false
+    },
+    {
+      "key": "fontSize",
+      "name": "Font Size",
+      "description": "Display the selected text using the chosen font size",
+      "default": {
+        "value": "size-12px",
+        "display": "12px"
+      },
+      "type": "select",
+      "options": [
+        {
+          "value": "size-10px",
+          "display": "10px"
+        },
+        {
+          "value": "size-12px",
+          "display": "12px"
+        },
+        {
+          "value": "size-14px",
+          "display": "14px"
+        },
+        {
+          "value": "size-16px",
+          "display": "16px"
+        }
+      ],
+      "multiple": false,
+      "userCanEdit": true,
+      "adminOnly": false
+    },
+    {
+      "key": "preserveWhitespace",
+      "name": "Preserve Whitespace",
+      "description": "If checked, the integration will preserve the whitespace of the selected text when displaying it in the Overlay Window",
+      "default": true,
+      "type": "boolean",
+      "userCanEdit": true,
+      "adminOnly": false
+    }
+  ],
+  "entityTypes": []
+}
