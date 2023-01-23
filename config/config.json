@@ -8,9 +8,8 @@
       "regex": "[\\s\\S]+"
     }
   ],
-  "styles": [
-    "./styles/style.less"
-  ],
+  "defaultColor": "light-gray",
+  "styles": ["./styles/style.less"],
   "block": {
     "component": {
       "file": "./components/block.js"
